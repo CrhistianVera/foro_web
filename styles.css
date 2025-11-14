@@ -1,0 +1,124 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+.container h2 {
+  color: #2563eb;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 45px 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6b7280;
+  padding: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+  transform: scale(1.02);
+}
+
+a {
+  text-decoration: none;
+  color: #10b981;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.msg {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.msg.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.msg.success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+small {
+  color: #6b7280;
+  font-size: 13px;
+  display: block;
+  text-align: left;
+  margin-top: 6px;
+}
